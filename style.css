@@ -14,6 +14,7 @@ body {
   font-weight: 500;
   font-style: normal;
   font-size: large;
+  color: black;
 }
 
 .nav-leftside {
@@ -33,8 +34,15 @@ body {
 }
 
 .nav-midside a {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: 0rem 0.5rem;
+  transition: 0.2s;
+  padding: 0.2rem 0.9rem;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.nav-midside a:hover {
+  background-color: rgb(255, 255, 255, 0.2);
 }
 
 .nav-midsidde:hover {
@@ -168,8 +176,10 @@ body {
 }
 
 .main-button {
+  position: relative;
   background-color: rgb(251, 174, 238);
   border: none;
+  outline: none;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -178,6 +188,7 @@ body {
   height: 6vh;
   border-radius: 10px;
   color: white;
+  z-index: 0;
 }
 
 .main-to-section-up {
@@ -198,9 +209,24 @@ body {
   background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), white);
 }
 
+section {
+  margin-top: 15vh;
+}
+
+.cake-icon-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5vh;
+}
+
+.cake-icon {
+  width: 7vh;
+}
+
 .display-wrapper {
   position: static;
-  padding-top: 12vh;
+  margin-bottom: 10vh;
   color: rgb(94, 94, 94);
 }
 
@@ -214,7 +240,6 @@ body {
   font-weight: 600;
   font-style: normal;
   font-size: xx-large;
-  padding-inline-start: 5rem;
   z-index: 10000000000;
 }
 
@@ -314,19 +339,107 @@ body {
 }
 
 .card-title {
+  margin-left: 1.5vh;
   margin-bottom: 2vh;
   margin-top: 1vh;
 }
 
 .card-liner {
-  margin-bottom: 1vh;
+  margin-bottom: 1.2vh;
 }
 
-.card-star {
-  display: flex;
-  list-style: none;
+.card-price {
+  margin-left: 1vh;
 }
-.card-star li img {
-  width: 1.5rem;
-  height: auto;
+
+.card-to-about {
+  background-image: linear-gradient(to bottom, white, rgb(255, 192, 203, 0.03));
+  height: 10vh;
+  color: transparent;
+}
+
+/* about us */
+
+.about-container {
+  background-color: rgb(255, 192, 203, 0.5);
+  height: 90vh;
+}
+
+.about-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  gap: 5vh;
+  margin: 0 22vh;
+}
+
+.about-img {
+  width: 40vw;
+
+  height: 50vh;
+  object-fit: cover;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 12px;
+}
+
+.about-text {
+  place-self: center;
+}
+
+.about-title {
+  margin-bottom: 2.5vh;
+  font-family: "Vollkorn", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  color: gray;
+  padding: 0 2vh;
+}
+
+.about-text p {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: medium;
+  padding: 2vh;
+}
+
+.about-text p span {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: larger;
+}
+
+.mision-text p {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: medium;
+  padding: 2vh;
+  margin: 5vh 22vh;
+}
+
+.our-container {
+  background-color: rgb(254, 152, 169);
+  height: 100vh;
+  margin-top: 0;
+}
+
+.about-to-our {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(255, 192, 203, 0.5),
+    rgb(254, 152, 169)
+  );
+  height: 15vh;
+  width: 100%;
+  color: black;
+}
+
+.card-to-about {
+  background-image: linear-gradient(to bottom, white, rgb(255, 192, 203, 0.03));
+  height: 10vh;
+  color: transparent;
 }
