@@ -20,7 +20,7 @@ body {
 
 .nav-leftside {
   display: flex;
-  gap: 1vh;
+  gap: 2vh;
   padding-inline-start: 2vh;
   align-items: center;
   transition: 0.2s;
@@ -112,7 +112,7 @@ body {
 
 .main-background {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: 105vh;
   background-image: url("./assets/img/background2.jpg");
   background-size: cover;
