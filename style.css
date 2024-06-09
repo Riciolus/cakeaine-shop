@@ -112,7 +112,7 @@ body {
 
 .main-background {
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 105vh;
   background-image: url("./assets/img/background2.jpg");
   background-size: cover;
@@ -145,7 +145,7 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -158,12 +158,12 @@ body {
 .main-fadding-up {
   position: absolute;
   color: blanchedalmond;
-  width: 100%;
+  width: 100vw;
   background-color: blanchedalmond;
 }
 
 .main-buttonContainer {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   display: flex;
   justify-content: center;
