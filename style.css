@@ -527,7 +527,7 @@ iframe {
     display: grid;
     position: absolute;
     top: 100%;
-    right: -50%;
+    right: -100%;
     background-color: whitesmoke;
     width: 30rem;
     height: 30vh;
@@ -542,19 +542,19 @@ iframe {
   }
 
   .card-wrapper {
+    display: grid;
     font-size: larger;
   }
 
   .card {
-    display: grid;
-    width: 19vw;
-    height: 22vh;
+    width: 70vw;
+    height: 40vh;
   }
 
   .card-image {
     position: absolute;
-    width: 19vw;
-    height: 20vh;
+    width: 70vw;
+    height: 30vh;
     object-fit: contain;
   }
 }
