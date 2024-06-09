@@ -304,7 +304,7 @@
 }
 
 .image-container {
-  height: 40vh;
+  height: 31vh;
 }
 
 .card-image {
@@ -524,8 +524,7 @@ iframe {
   }
 
   .nav-midside {
-    display: none;
-    /* display: grid;
+    display: grid;
     position: absolute;
     top: 100%;
     right: -100%;
@@ -533,12 +532,16 @@ iframe {
     width: 30rem;
     height: 30vh;
     border-radius: 12px 0px 0px 12px;
-    transition: 0.2s; */
+    z-index: 10000000;
+    transition: 0.2s;
   }
 
   .nav-midside.active {
     display: grid;
     right: 0;
+  }
+
+  .display-wrapper {
   }
 
   .card-wrapper {
@@ -548,7 +551,9 @@ iframe {
 
   .card {
     width: 70vw;
-    height: 40vh;
+    height: 42vh;
+    margin: 0;
+    background-color: rgb(255, 255, 255, 0.5);
   }
 
   .card-image {
@@ -559,5 +564,25 @@ iframe {
   .card-image-hover {
     width: 70vw;
     height: 30vh;
+    object-fit: contain;
+  }
+
+  .display-wrapper {
+    position: static;
+  }
+
+  .display-bg {
+    display: flex;
+    flex-wrap: nowrap;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1000000000;
+    margin-top: 20vh;
+  }
+
+  .display-bg div {
+    height: 100vh;
+    transform: scaleY(1.7);
   }
 }
