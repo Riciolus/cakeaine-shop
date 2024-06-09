@@ -158,12 +158,12 @@ body {
 .main-fadding-up {
   position: absolute;
   color: blanchedalmond;
-  width: 100vw;
+  width: 100%;
   background-color: blanchedalmond;
 }
 
 .main-buttonContainer {
-  width: 100vw;
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
