@@ -20,7 +20,7 @@ body {
 
 .nav-leftside {
   display: flex;
-  gap: 2vh;
+  gap: 1vh;
   padding-inline-start: 2vh;
   align-items: center;
   transition: 0.2s;
