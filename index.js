@@ -28,3 +28,9 @@ document.addEventListener("DOMContentLoaded", () => {
     searchInput.style.opacity = "0";
   });
 });
+
+// Show hamburger menu on phone
+const hmbGetMidside = document.querySelector(".nav-midside");
+document.querySelector("#hmb").onclick = () => {
+  hmbGetMidside.classList.toggle("active");
+};
