@@ -1,7 +1,7 @@
-*,
-body {
+* {
   padding: 0;
   margin: 0;
+  max-width: 100vw;
 }
 
 .nav-wrapper {
@@ -93,7 +93,7 @@ body {
 
 /* Hover effect to show input */
 .search-container:hover .search-input {
-  width: 200px;
+  width: 12rem;
   opacity: 1;
 }
 .nav-logo {
@@ -289,7 +289,7 @@ body {
 
 .card {
   /* background-color: blue; */
-  width: 40vh;
+  width: 19vw;
   height: 55vh;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -304,13 +304,12 @@ body {
 }
 
 .image-container {
-  width: 40vh;
   height: 40vh;
 }
 
 .card-image {
   position: absolute;
-  width: 40vh;
+  width: 19vw;
   height: 40vh;
   border-radius: 15px;
   object-fit: cover;
@@ -470,6 +469,8 @@ body {
 
 iframe {
   border-radius: 3px;
+  width: 37.5rem;
+  height: 25rem;
 }
 
 .alamat-wrapper {
@@ -526,7 +527,7 @@ iframe {
     display: grid;
     position: absolute;
     top: 100%;
-    right: -100%;
+    right: -50%;
     background-color: whitesmoke;
     width: 30rem;
     height: 30vh;
@@ -536,6 +537,24 @@ iframe {
   }
 
   .nav-midside.active {
+    display: grid;
     right: 0;
+  }
+
+  .card-wrapper {
+    font-size: larger;
+  }
+
+  .card {
+    display: grid;
+    width: 19vw;
+    height: 22vh;
+  }
+
+  .card-image {
+    position: absolute;
+    width: 19vw;
+    height: 20vh;
+    object-fit: contain;
   }
 }
