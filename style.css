@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   max-width: 100vw;
+  overflow-x: hidden;
 }
 
 .nav-wrapper {
@@ -304,7 +305,7 @@
 }
 
 .image-container {
-  height: 31vh;
+  height: 40vh;
 }
 
 .card-image {
@@ -564,7 +565,6 @@ iframe {
   .card-image-hover {
     width: 70vw;
     height: 30vh;
-    object-fit: contain;
   }
 
   .display-wrapper {
@@ -584,5 +584,9 @@ iframe {
   .display-bg div {
     height: 100vh;
     transform: scaleY(1.7);
+  }
+
+  .image-container {
+    height: 31vh;
   }
 }
