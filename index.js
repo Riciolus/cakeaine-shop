@@ -13,6 +13,26 @@
 //   }
 // }
 
+// When Scrolled Then Navbar
+
+document.addEventListener("scroll", () => {
+  const navbar = document.querySelector(".navbar");
+
+  if (600 < window.scrollY) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+
+  if (300 < window.scrollY) {
+    navbar.classList.add("pre");
+  } else if (600 < window.scrollY) {
+    navbar.classList.remove("pre");
+  } else {
+    navbar.classList.remove("pre");
+  }
+});
+
 // Show Input Search When Hovering
 document.addEventListener("DOMContentLoaded", () => {
   const searchContainer = document.querySelector(".search-container");
