@@ -16,6 +16,15 @@
     />
   </head>
   <body>
+    <!-- Go to up button -->
+    <div class="up-btn-container">
+      <button class="up-btn">
+        <a href="#"
+          ><img src="./assets/img/Icons/icons8-up-100.png" alt=""
+        /></a>
+      </button>
+    </div>
+
     <!-- NAVIGATION BAR -->
 
     <nav class="navbar">
@@ -28,9 +37,9 @@
           />
         </div>
         <div class="nav-midside">
-          <a id="product">Product</a>
-          <a>Store Location</a>
-          <a>Contact us</a>
+          <a href="#product">Product</a>
+          <a href="#store">Store Location</a>
+          <a href="#about-us">About us</a>
         </div>
         <div class="nav-rightside">
           <!-- <img src="./assets/img/Icons/Moon.png" alt="" class="nav-icon" /> -->
@@ -59,7 +68,9 @@
             </div>
             <span class="main-moto2">#DeliveringHappiness</span>
             <div class="main-buttonContainer">
-              <button class="main-button">Shop</button>
+              <button class="main-button">
+                <a href="cake-collection.html">Shop</a>
+              </button>
             </div>
           </div>
           <div class="main-to-section-up">'</div>
@@ -69,7 +80,7 @@
     </main>
 
     <!-- CAKES SECTION -->
-    <section>
+    <section id="product">
       <div class="cake-icon-wrapper">
         <img src="./assets/img/Icons/cakee.png" alt="" class="cake-icon" />
       </div>
@@ -263,13 +274,15 @@
           </div>
         </div>
         <div class="seemore-wrapper">
-          <button class="seemore-button">See More</button>
+          <button class="seemore-button">
+            <a href="cake-collection.html">See More</a>
+          </button>
         </div>
       </div>
     </section>
 
     <!-- ABOUT US PAGES -->
-    <section class="about-container">
+    <section class="about-container" id="about-us">
       <div class="card-to-about">p</div>
       <div class="about-wrapper">
         <img src="./assets/img/aboutUs.jpg" alt="" class="about-img" />
@@ -300,9 +313,9 @@
       </div>
     </section>
 
-    <div class="about-to-our">`</div>
+    <!-- <div class="about-to-our">`</div> -->
     <!-- Our Store Section -->
-    <section class="our">
+    <section class="our" id="store">
       <div class="our-container">
         <h1>OUR STORES & CONTACT</h1>
         <div class="our-btn-wrapper">

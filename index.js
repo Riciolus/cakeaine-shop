@@ -54,3 +54,15 @@ const hmbGetMidside = document.querySelector(".nav-midside");
 document.querySelector("#hmb").onclick = () => {
   hmbGetMidside.classList.toggle("active");
 };
+
+// Show up button when scrolledY is above 100vh
+
+document.addEventListener("scroll", () => {
+  const upButton = document.querySelector(".up-btn-container");
+
+  if (window.scrollY > 700) {
+    upButton.classList.add("active");
+  } else {
+    upButton.classList.remove("active");
+  }
+});

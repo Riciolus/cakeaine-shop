@@ -2,6 +2,38 @@
   padding: 0;
   margin: 0;
   max-width: 100vw;
+  scroll-behavior: smooth;
+}
+
+.up-btn-container {
+  position: fixed;
+  z-index: 10000000000;
+  bottom: 0;
+  right: 0;
+  margin-right: 3vh;
+  margin-bottom: 3vh;
+  border-radius: 100;
+  display: none;
+  opacity: 0.89;
+  transition: 0.2s;
+}
+
+.up-btn-container.active {
+  display: block;
+}
+
+.up-btn-container:hover {
+  transform: scale(1.2);
+}
+
+.up-btn {
+  border: none;
+  background-color: transparent;
+}
+
+.up-btn a img {
+  width: 10vh;
+  height: 10vh;
 }
 
 .navbar {
@@ -12,7 +44,6 @@
 
 .navbar.pre {
   top: -10%;
-
   position: fixed;
 }
 
@@ -22,7 +53,8 @@
 }
 
 .navbar.pre.scrolled .nav-wrapper {
-  background-image: linear-gradient(to top, pink, rgb(208, 97, 119));
+  /* background-image: linear-gradient(to top, pink, rgb(208, 97, 119)); */
+  background-color: rgba(255, 192, 203, 0.756);
   transition: 0.5s;
 }
 
@@ -202,12 +234,21 @@
   font-weight: 300;
   font-style: normal;
   font-size: 1.5rem;
-  width: 20vh;
+  width: 40vw;
   height: 6vh;
   border-radius: 10px;
-  color: white;
+
   z-index: 0;
   transition: 0.2s;
+}
+
+a,
+a:active {
+  color: white;
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .main-button:hover {
@@ -475,9 +516,9 @@
   background-image: linear-gradient(
     to bottom,
     rgb(255, 192, 203, 0.5),
-    /* rgb(254, 152, 169) */ white
+    /* rgb(254, 152, 169) */ rgb(182, 109, 141)
   );
-  height: 15vh;
+  height: 2vh;
   width: 100%;
   color: black;
 }
@@ -490,6 +531,8 @@
   margin-top: 0;
   padding: 0 22vh;
   font-family: "Poppins", sans-serif;
+  background-color: rgb(182, 109, 141);
+  color: white;
 }
 
 .our-container {
@@ -556,24 +599,29 @@ iframe {
   * {
     font-size: 62.5%;
     max-width: 100vw;
-    overflow-x: hidden;
+    overflow-x: clip;
   }
 
   nav {
     position: relative;
+    overflow: visible;
   }
 
-  nav,
+  /* nav,
   section {
-    overflow: hidden;
+    overflow-: hidden;
+  } */
+
+  .nav-leftside {
+    transform: scale(1.3);
   }
 
-  .main-wrapper,
-  main,
-  .main-background,
-  .main-buttonContainer,
-  .main-container {
-    overflow-x: hidden;
+  .nav-leftside:hover {
+    transform: scale(1.5);
+  }
+
+  .nav-wrapper {
+    overflow: hidden;
   }
 
   .nav-hmb {
@@ -586,10 +634,11 @@ iframe {
     top: 100%;
     right: -100%;
     background-color: whitesmoke;
-    width: 30rem;
+    color: black;
+    width: 50vw;
     height: 30vh;
     border-radius: 12px 0px 0px 12px;
-    z-index: 10000000;
+    z-index: 100000000000000000000;
     transition: 0.2s;
   }
 
@@ -598,21 +647,39 @@ iframe {
     right: 0;
   }
 
+  .main-wrapper {
+    overflow: hidden;
+  }
+
+  .main-moto {
+    font-size: 50%;
+    text-align: center;
+  }
+
+  .main-moto2 {
+    margin-top: 3vh;
+  }
+
+  .main-button {
+    font-size: 3rem;
+  }
+
   .card-wrapper {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     font-size: larger;
   }
 
   .card {
-    width: 70vw;
-    height: 42vh;
+    width: 30vw;
+    height: 21vh;
     margin: 0;
     background-color: rgb(255, 255, 255, 0.5);
   }
 
   .card-image {
-    width: 70vw;
-    height: 30vh;
+    width: 30vw;
+    height: 21vh;
   }
 
   .card-image-hover {
