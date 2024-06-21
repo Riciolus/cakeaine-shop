@@ -40,6 +40,7 @@
           <a href="#product">Product</a>
           <a href="#store">Store Location</a>
           <a href="#about-us">About us</a>
+          <a href="cake-collection.html">Cakes</a>
         </div>
         <div class="nav-rightside">
           <!-- <img src="./assets/img/Icons/Moon.png" alt="" class="nav-icon" /> -->
@@ -181,7 +182,7 @@
 
       <!-- NEW COLLECTION  -->
       <div class="display-wrapper">
-        <div class="display-bg">
+        <div class="display-bg scnd">
           <div class="mid-bg2">p</div>
           <div class="left-bg2">p</div>
         </div>
@@ -313,47 +314,104 @@
       </div>
     </section>
 
-    <!-- <div class="about-to-our">`</div> -->
+    <div class="about-to-our">`</div>
     <!-- Our Store Section -->
     <section class="our" id="store">
       <div class="our-container">
         <h1>OUR STORES & CONTACT</h1>
         <div class="our-btn-wrapper">
-          <button class="our-button">Toko 1</button>
-          <button class="our-button">Toko 2</button>
-          <button class="our-button">Toko 3</button>
+          <button class="seemore-button toko" onclick="handleToko1()">
+            TOKO 1
+          </button>
+          <button class="seemore-button toko" onclick="handleToko2()">
+            TOKO 2
+          </button>
+          <button class="seemore-button toko" onclick="handleToko3()">
+            TOKO 3
+          </button>
         </div>
         <div class="our-map-wrapper">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.2966408254274!2d106.83273137105253!3d-6.3556337236338685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ec3c53dfed75%3A0xad5f6ba586fc5d5e!2sUniversitas%20BSI%20Kampus%20Margonda!5e0!3m2!1sid!2sid!4v1717911230224!5m2!1sid!2sid"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <div class="iframe-wrapper">
+            <iframe
+              class="iframe1"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.2966408254274!2d106.83273137105253!3d-6.3556337236338685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ec3c53dfed75%3A0xad5f6ba586fc5d5e!2sUniversitas%20BSI%20Kampus%20Margonda!5e0!3m2!1sid!2sid!4v1717911230224!5m2!1sid!2sid"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <iframe
+              class="iframe2"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.432320822141!2d107.01257557499027!3d-6.206566293781241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698bddb90ba0e5%3A0x6ca31bc5f1daa29e!2sUniversitas%20BSI%20Kampus%20Kaliabang!5e0!3m2!1sid!2sid!4v1718987777538!5m2!1sid!2sid"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <iframe
+              class="iframe3"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.608924642624!2d106.84033707475021!3d-6.183063993804444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f529e6d018f1%3A0xaff453c7ca93130e!2sUniversitas%20BSI%20Kampus%20Kramat%2098!5e0!3m2!1sid!2sid!4v1718990878852!5m2!1sid!2sid"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
           <div class="alamat-wrapper">
-            <img src="assets/img/LogoCakeaine-transparent2.png" alt="" />
+            <img
+              class="logo"
+              src="assets/img/LogoCakeaine-transparent2.png"
+              alt=""
+            />
             <h3>Cakeaine Bakery & Cake Shop</h3>
+
             <p>
-              Jl. Margonda, Kecamatan Beji, Kota Depok, Jawa Barat 16424 <br />
+              📍Jl. Margonda, Kecamatan Beji, Kota Depok, Jawa Barat 16424
+              <br />
               Phone: +62 8237 17218
             </p>
 
             <p>
-              Jl. Lkr. Utara No.8, Perwira, Kec. Bekasi Utara, Kota Bks, Jawa
+              📍Jl. Lkr. Utara No.8, Perwira, Kec. Bekasi Utara, Kota Bks, Jawa
               Barat 17124 <br />
               Phone: +62 9588 9783
             </p>
             <p>
-              Jl. Kramat Raya No.98, RT.2/RW.9, Kwitang, Kec. Senen, Kota
+              📍Jl. Kramat Raya No.98, RT.2/RW.9, Kwitang, Kec. Senen, Kota
               Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10450 <br />
               Phone: +62 8134 1087
             </p>
-            <p>
-              HP/SM: +62 1391 9182 <br />
-              Email: cakeaine@gmail.com
-            </p>
+            <div class="phone-email-wrap">
+              <img
+                class="phone-email"
+                src="./assets/img/Icons/telephone.png"
+                alt=""
+              />
+              <p>HP/SMS: +62 812 8248 0637</p>
+            </div>
+            <div class="phone-email-wrap">
+              <img
+                class="phone-email"
+                src="./assets/img/Icons/email.png"
+                alt=""
+              />
+              <p>Email: cakeaine@gmail.com</p>
+            </div>
+
+            <div class="social">
+              <a href="https://www.instagram.com">
+                <img src="./assets/img/Icons/instagram.png" alt="" />
+              </a>
+              <a href="https://www.whatsapp.com">
+                <img src="./assets/img/Icons/whatsapp.png" alt="" />
+              </a>
+              <a href="https://www.facebook.com">
+                <img src="./assets/img/Icons/facebook.png" alt="" />
+              </a>
+            </div>
           </div>
+          <img src="./assets/img/cake-bg.png" alt="" class="our-bg" />
         </div>
       </div>
     </section>

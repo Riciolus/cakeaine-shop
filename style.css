@@ -100,6 +100,8 @@
   padding: 0.2rem 0.9rem;
   border-radius: 15px;
   cursor: pointer;
+  text-decoration: none;
+  color: white;
 }
 
 .nav-midside a:hover {
@@ -247,8 +249,8 @@
   transition: 0.2s;
 }
 
-a,
-a:active {
+.main-button a,
+.main-button a:active {
   color: white;
   text-decoration: none;
   align-items: center;
@@ -258,6 +260,7 @@ a:active {
 
 .main-button:hover {
   transform: scale(1.1);
+  background-color: rgb(68, 40, 63);
 }
 
 .main-to-section-up {
@@ -445,11 +448,22 @@ a:active {
   color: white;
   z-index: 0;
   transition: 0.2s;
+  cursor: pointer;
 }
 
 .seemore-button:hover {
   transform: scale(1.1);
-  cursor: pointer;
+
+  background-color: rgb(68, 40, 63);
+}
+
+.seemore-button a,
+.seemore-button a:active {
+  color: white;
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .card-to-about {
@@ -462,13 +476,14 @@ a:active {
 
 .about-container {
   background-color: rgb(255, 192, 203, 0.5);
-  height: 90vh;
+  height: 100vh;
 }
 
 .about-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 70%;
   margin-top: 10vh;
   gap: 5vh;
   margin: 0 22vh;
@@ -476,7 +491,6 @@ a:active {
 
 .about-img {
   width: 40vw;
-
   height: 50vh;
   object-fit: cover;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
@@ -513,35 +527,36 @@ a:active {
   font-family: "Poppins", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
-  padding: 2vh;
-  margin: 5vh 22vh;
+  padding: 0vh;
+  margin: 0vh 22vh;
 }
 
 .about-to-our {
   background-image: linear-gradient(
     to bottom,
     rgb(255, 192, 203, 0.5),
-    /* rgb(254, 152, 169) */ rgb(182, 109, 141)
+    /* rgb(254, 152, 169) */ rgb(164, 103, 115)
   );
   height: 2vh;
   width: 100%;
-  color: black;
+  color: transparent;
 }
 
 .our {
-  /* background-color: rgb(254, 152, 169); */
-
+  /* background-color: rgb(214, 161, 161); */
+  background-color: rgb(164, 103, 115);
+  color: white;
   object-fit: fill;
-  height: 90vh;
+  height: 85vh;
   margin-top: 0;
   padding: 0 22vh;
   font-family: "Poppins", sans-serif;
-  background-color: rgb(182, 109, 141);
-  color: white;
+  /* background-color: whitesmoke; */
 }
 
 .our-container {
   padding-top: 3rem;
+  position: relative;
 }
 
 .our-container h1 {
@@ -557,10 +572,33 @@ a:active {
   display: flex;
 }
 
+.iframe-wrapper {
+  position: relative;
+  width: 58vw;
+  height: 54vh;
+}
+
 iframe {
-  border-radius: 3px;
-  width: 37.5rem;
-  height: 25rem;
+  border-radius: 8px;
+  width: 39vw;
+  height: 55vh;
+  position: absolute;
+}
+
+.iframe1 {
+  z-index: 10;
+}
+
+.iframe1.active {
+  z-index: 100;
+}
+
+.iframe2.active {
+  z-index: 100;
+}
+
+.iframe3.active {
+  z-index: 100;
 }
 
 .alamat-wrapper {
@@ -573,17 +611,18 @@ iframe {
 
 .alamat-wrapper h3 {
   margin-bottom: 1vh;
+  margin-top: 2vh;
 }
 
 .alamat-wrapper p {
   margin-bottom: 2vh;
 }
 
-.alamat-wrapper img {
+.alamat-wrapper .logo {
   width: 20vh;
   transform: scale(1.5);
-  margin-top: 4vh;
-  margin-bottom: 2vh;
+  /* margin-top: 4vh; */
+  /* margin-bottom: 2vh; */
 }
 
 .our-button {
@@ -591,12 +630,57 @@ iframe {
   background-color: rgb(251, 174, 238);
   border: none;
   outline: none;
-  font-weight: 500;
+  font-weight: 600;
   font-size: medium;
   width: 12vh;
   height: 5vh;
   border-radius: 10px;
   margin-right: 1vh;
+  color: black;
+}
+
+.toko {
+  font-weight: 600;
+  margin: 0 0.1em;
+  width: 6vw;
+  font-size: 1.2em;
+}
+
+.toko:hover {
+  transform: scale(1.05);
+}
+
+.our-bg {
+  position: absolute;
+  right: -10%;
+  top: 13%;
+  transform: scale(0.7);
+  z-index: 1;
+  opacity: 0.2;
+}
+
+.social {
+  margin-top: 2vh;
+}
+
+.social img {
+  width: 2rem;
+  margin-right: 1rem;
+  transition: 0.2s;
+}
+
+.social img:hover {
+  transform: scale(1.2);
+}
+
+.phone-email-wrap {
+  display: flex;
+}
+
+.phone-email {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.6vw;
 }
 
 @media screen and (max-width: 500px) {
@@ -639,12 +723,19 @@ iframe {
     top: 100%;
     right: -100%;
     background-color: whitesmoke;
-    color: black;
     width: 50vw;
     height: 30vh;
-    border-radius: 12px 0px 0px 12px;
+    border-radius: 0px 0px 0px 12px;
     z-index: 100000000000000000000;
     transition: 0.2s;
+    opacity: 0.9;
+  }
+
+  .nav-midside a {
+    color: black;
+    font-size: 1.8rem;
+    display: flex;
+    text-shadow: none;
   }
 
   .nav-midside.active {
@@ -689,10 +780,11 @@ iframe {
 
   .card {
     width: 40vw;
-    height: 25vh;
+    height: 27vh;
     margin: 0;
     background-color: rgb(255, 255, 255, 0.5);
     font-size: 2rem;
+    padding: 0.6vh;
   }
 
   .image-container {
@@ -730,12 +822,18 @@ iframe {
     height: 100vh;
     width: 100vw;
     z-index: -1000000000;
-    margin-top: 20vh;
+    margin-top: 12vh;
   }
 
   .display-bg div {
-    height: 100vh;
-    transform: scaleY(1.7);
+    height: 90vh;
+    transform: scaleY(1.5);
+  }
+
+  .mid-bg2,
+  .left-bg2,
+  .scnd {
+    transform: scaleY(0.25);
   }
 
   .seemore-button {

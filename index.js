@@ -66,3 +66,45 @@ document.addEventListener("scroll", () => {
     upButton.classList.remove("active");
   }
 });
+
+// Changes Toko from user click
+
+const iframe1 = document.querySelector(".iframe1");
+const iframe2 = document.querySelector(".iframe2");
+const iframe3 = document.querySelector(".iframe3");
+
+const handleToko1 = () => {
+  document.addEventListener("click", () => {
+    iframe1.classList.add("active");
+
+    if (iframe2.className === "iframe2 active") {
+      iframe2.classList.remove("active");
+    } else if (iframe3.className === "iframe3 active") {
+      iframe3.classList.remove("active");
+    }
+  });
+};
+
+const handleToko2 = () => {
+  document.addEventListener("click", () => {
+    if (iframe1.className === "iframe1 active") {
+      iframe1.classList.remove("active");
+    } else if (iframe3.className === "iframe3 active") {
+      iframe3.classList.remove("active");
+    }
+
+    iframe2.classList.add("active");
+  });
+};
+
+const handleToko3 = () => {
+  document.addEventListener("click", () => {
+    if (iframe1.className === "iframe1 active") {
+      iframe1.classList.remove("active");
+    } else if (iframe2.className === "iframe2 active") {
+      iframe2.classList.remove("active");
+    }
+
+    iframe3.classList.add("active");
+  });
+};
