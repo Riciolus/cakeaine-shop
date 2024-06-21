@@ -668,23 +668,33 @@ iframe {
     display: flex;
     flex-wrap: wrap;
     font-size: larger;
+    gap: 1rem;
   }
 
   .card {
-    width: 30vw;
-    height: 21vh;
+    width: 40vw;
+    height: 25vh;
     margin: 0;
     background-color: rgb(255, 255, 255, 0.5);
+    font-size: 1.7rem;
+  }
+
+  .image-container {
+    height: 18vh;
   }
 
   .card-image {
-    width: 30vw;
-    height: 21vh;
+    width: auto;
+    height: 18vh;
   }
 
   .card-image-hover {
     width: 70vw;
     height: 30vh;
+  }
+
+  .card-title {
+    margin-bottom: 1vh;
   }
 
   .display-wrapper {
@@ -704,9 +714,5 @@ iframe {
   .display-bg div {
     height: 100vh;
     transform: scaleY(1.7);
-  }
-
-  .image-container {
-    height: 31vh;
   }
 }
