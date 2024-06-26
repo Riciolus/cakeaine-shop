@@ -46,7 +46,7 @@
           <!-- <img src="./assets/img/Icons/Moon.png" alt="" class="nav-icon" /> -->
           <div class="search-container">
             <input type="text" class="search-input" placeholder="Search..." />
-            <img src="./assets/img/search.png" alt="" class="nav-icon" />
+            <img src="./assets/img/Icons/search2.png" alt="" class="nav-icon" />
           </div>
           <img
             src="./assets/img/Icons/hamburger.png"
@@ -286,9 +286,23 @@
     <section class="about-container" id="about-us">
       <div class="card-to-about">p</div>
       <div class="about-wrapper">
-        <img src="./assets/img/aboutUs.jpg" alt="" class="about-img" />
+        <div class="about-img-wrap">
+          <img src="./assets/img/aboutUs.jpg" alt="" class="about-img top" />
+          <div class="goFlex">
+            <img
+              src="./assets/img/aboutUs-2.jpg"
+              alt=""
+              class="about-img bottom"
+            />
+            <img
+              src="./assets/img/aboutUs-3.png"
+              alt=""
+              class="about-img bottom"
+            />
+          </div>
+        </div>
         <div class="about-text">
-          <h1 class="about-title">ABOUT US</h1>
+          <h1 class="about-title">About Us</h1>
           <div class="1">
             <p>
               <span>Selamat Datang di Cakeaine Cakeshop!</span>
@@ -299,11 +313,19 @@
               istimewa lainnya, kami hadir untuk membuat setiap acara menjadi
               lebih manis dan tak terlupakan.
             </p>
+            <h1 class="about-title dua">Our Mission</h1>
+            <p>
+              Misi kami adalah membawa kebahagiaan melalui setiap gigitan kue
+              yang kami buat. Dengan menggunakan bahan-bahan berkualitas terbaik
+              dan resep-resep yang telah diuji oleh waktu, kami berkomitmen
+              untuk memberikan produk yang tidak hanya lezat tetapi juga penuh
+              dengan cinta.
+            </p>
           </div>
           <br />
         </div>
       </div>
-      <div class="mision-text">
+      <!-- <div class="mision-text">
         <p>
           Misi Kami Misi kami adalah membawa kebahagiaan melalui setiap gigitan
           kue yang kami buat. Dengan menggunakan bahan-bahan berkualitas terbaik
@@ -311,14 +333,24 @@
           memberikan produk yang tidak hanya lezat tetapi juga penuh dengan
           cinta.
         </p>
-      </div>
+      </div> -->
     </section>
 
-    <div class="about-to-our">`</div>
+    <div class="marquee-bar-container">
+      <marquee behavior="scroll" direction="right" class="marquee-text"
+        >Free Delivery on orders over Rp 1.000.000
+        <img src="./assets/img/Icons/delivery.png" alt="" /> 10% Cashback on all
+        orders over Rp 300.000
+        <img src="./assets/img/Icons/cake.png" alt="" />Free Delivery on orders
+        over Rp 1.000.000
+        <img src="./assets/img/Icons/delivery.png" alt="" /> 10% Cashback on all
+        orders over Rp 300.000 <img src="./assets/img/Icons/cake.png" alt=""
+      /></marquee>
+    </div>
     <!-- Our Store Section -->
     <section class="our" id="store">
       <div class="our-container">
-        <h1>OUR STORES & CONTACT</h1>
+        <h1>FIND US AT!</h1>
         <div class="our-btn-wrapper">
           <button class="seemore-button toko" onclick="handleToko1()">
             TOKO 1
@@ -382,22 +414,10 @@
               Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10450 <br />
               Phone: +62 8134 1087
             </p>
-            <div class="phone-email-wrap">
-              <img
-                class="phone-email"
-                src="./assets/img/Icons/telephone.png"
-                alt=""
-              />
-              <p>HP/SMS: +62 812 8248 0637</p>
-            </div>
-            <div class="phone-email-wrap">
-              <img
-                class="phone-email"
-                src="./assets/img/Icons/email.png"
-                alt=""
-              />
-              <p>Email: cakeaine@gmail.com</p>
-            </div>
+
+            <p>
+              ☎️ HP/SMS: +62 812 8248 0637 <br />📬 Email: cakeaine@gmail.com
+            </p>
 
             <div class="social">
               <a href="https://www.instagram.com">
