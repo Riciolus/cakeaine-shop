@@ -3,9 +3,463 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Cakeaine | Cake Shop</title>
+    <link rel="icon" href="./assets/img/logoCakeaine.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- import font from google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Vollkorn:ital,wght@0,400..900;1,400..900&family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <p>masuk</p>
+  <body class="page2">
+    <!-- NAVIGATION BAR -->
+
+    <nav class="navbar">
+      <div class="nav-wrapper" id="1">
+        <div class="nav-leftside">
+          <img
+            class="nav-logo"
+            src="./assets/img/LogoCakeaine-transparent.png"
+            alt=""
+          />
+        </div>
+        <div class="nav-midside clicked">
+          <a href="index.html">Home</a>
+        </div>
+        <div class="nav-rightside">
+          <!-- <img src="./assets/img/Icons/Moon.png" alt="" class="nav-icon" /> -->
+          <div class="search-container">
+            <img
+              src="./assets/img/Icons/search2.png"
+              alt=""
+              class="nav-icon second"
+            />
+          </div>
+          <img
+            src="./assets/img/Icons/hamburger.png"
+            alt=""
+            class="nav-hmb nav-icon"
+            id="hmb"
+          />
+        </div>
+      </div>
+    </nav>
+
+    <!-- SEARCH  -->
+    <div class="search">
+      <div class="search-wrapper">
+        <div>
+          <p>Search Cakes</p>
+          <img src="assets/img/Icons/cake.png" alt="" />
+        </div>
+        <input
+          type="text"
+          name=""
+          id="input"
+          class="input-cake"
+          placeholder="Happy Searching!"
+          autocomplete="off"
+        />
+      </div>
+    </div>
+
+    <div class="card-list">
+      <div class="card secondpage" id="card1">
+        <div class="image-container secondpage">
+          <div class="image-wrapper secondpage">
+            <img
+              src="./assets/img/Cake/LYCHEE_ROSE.webp"
+              alt=""
+              class="card-image secondpage"
+            />
+            <img
+              src="./assets/img/Cake/LYCHEE_ROSE_SLICE_CROP1.webp  "
+              alt=""
+              class="card-image-hover secondpage"
+            />
+          </div>
+        </div>
+        <p class="card-title secondpage">Lychee Rose</p>
+        <hr class="card-liner secondpage" />
+        <div class="card-price secondpage">Rp 490.000</div>
+      </div>
+
+      <div class="card secondpage" id="card1">
+        <div class="image-container secondpage">
+          <div class="image-wrapper secondpage">
+            <img
+              src="./assets/img/Cake/COLETTE_S_GARDEN_CROP1.webp"
+              alt=""
+              class="card-image secondpage"
+            />
+            <img
+              src="./assets/img/Cake/COLETTE_S-GARDEN3.webp "
+              alt=""
+              class="card-image-hover secondpage"
+            />
+          </div>
+        </div>
+        <p class="card-title secondpage">Heavenly Garden</p>
+        <hr class="card-liner secondpage" />
+        <div class="card-price secondpage">Rp 510.000</div>
+      </div>
+
+      <div class="card secondpage" id="card1">
+        <div class="image-container secondpage">
+          <div class="image-wrapper secondpage">
+            <img
+              src="./assets/img/Cake/web-pandan1.webp"
+              alt=""
+              class="card-image secondpage"
+            />
+            <img
+              src="./assets/img/Cake/web-pandan2.webp "
+              alt=""
+              class="card-image-hover secondpage"
+            />
+          </div>
+        </div>
+        <p class="card-title secondpage">Pandan Sensation</p>
+        <hr class="card-liner secondpage" />
+        <div class="card-price secondpage">Rp 400.000</div>
+      </div>
+
+      <div class="card secondpage" id="card1">
+        <div class="image-container secondpage">
+          <div class="image-wrapper secondpage">
+            <img
+              src="./assets/img/Cake/MERMAID_CAKE_CROP1.webp"
+              alt=""
+              class="card-image secondpage"
+            />
+            <img
+              src="./assets/img/Cake/MERAMID-CAKE-3.webp  "
+              alt=""
+              class="card-image-hover secondpage"
+            />
+          </div>
+        </div>
+        <p class="card-title secondpage">Mermaid</p>
+        <hr class="card-liner secondpage" />
+        <div class="card-price secondpage">410.000</div>
+      </div>
+
+      <div class="card secondpage" id="card1">
+        <div class="image-container secondpage">
+          <div class="image-wrapper secondpage">
+            <img
+              src="./assets/img/Cake/StrawberryCake_2.webp"
+              alt=""
+              class="card-image secondpage"
+            />
+          </div>
+        </div>
+        <p class="card-title secondpage">Early Grey Shortcake</p>
+        <hr class="card-liner secondpage" />
+        <div class="card-price secondpage">Rp 340.000</div>
+      </div>
+
+      <div class="card secondpage" id="card1">
+        <div class="image-container secondpage">
+          <div class="image-wrapper secondpage">
+            <img
+              src="./assets/img/Cake/POPCORN_CROP1.webp"
+              alt=""
+              class="card-image secondpage"
+            />
+            <img
+              src="./assets/img/Cake/POPCORN_SLICE_CROP1.webp  "
+              alt=""
+              class="card-image-hover secondpage"
+            />
+          </div>
+        </div>
+        <p class="card-title secondpage">Popcorn Caramello</p>
+        <hr class="card-liner secondpage" />
+        <div class="card-price secondpage">Rp 300.000</div>
+      </div>
+
+      <div class="card secondpage" id="card1">
+        <div class="image-container secondpage">
+          <div class="image-wrapper secondpage">
+            <img
+              src="./assets/img/Cake/UNICORN_CROP1.webp"
+              alt=""
+              class="card-image secondpage"
+            />
+            <img
+              src="./assets/img/Cake/UNICORN-CAKE-3.webp  "
+              alt=""
+              class="card-image-hover secondpage"
+            />
+          </div>
+        </div>
+        <p class="card-title secondpage">Unicorn</p>
+        <hr class="card-liner secondpage" />
+        <div class="card-price secondpage">Rp 500.000</div>
+      </div>
+
+      <div class="card secondpage" id="card1">
+        <div class="image-container secondpage">
+          <div class="image-wrapper secondpage">
+            <img
+              src="./assets/img/Cake/CHOCOLATE_AMBER_CROP1.webp"
+              alt=""
+              class="card-image secondpage"
+            />
+            <img
+              src="./assets/img/Cake/CHOCOLATE-AMBER4.webp  "
+              alt=""
+              class="card-image-hover secondpage"
+            />
+          </div>
+        </div>
+        <p class="card-title secondpage">Chocolate Amber</p>
+        <hr class="card-liner secondpage" />
+        <div class="card-price secondpage">Rp 525.000</div>
+      </div>
+
+      <div class="card secondpage" id="card1">
+        <div class="image-container secondpage">
+          <div class="image-wrapper secondpage">
+            <img
+              src="./assets/img/Cake/Manggocake_2.webp"
+              alt=""
+              class="card-image secondpage"
+            />
+          </div>
+        </div>
+        <p class="card-title secondpage">Mango Sunset Shortcake</p>
+        <hr class="card-liner secondpage" />
+        <div class="card-price secondpage">Rp 490.000</div>
+      </div>
+
+      <div class="card secondpage" id="card1">
+        <div class="image-container secondpage">
+          <div class="image-wrapper secondpage">
+            <img
+              src="./assets/img/Cake/luminuxe-new.webp  "
+              alt=""
+              class="card-image secondpage"
+            />
+            <img
+              src="./assets/img/Cake/luminuxe-new-2.webp  "
+              alt=""
+              class="card-image-hover secondpage"
+            />
+          </div>
+        </div>
+        <p class="card-title secondpage">Lumineux</p>
+        <hr class="card-liner secondpage" />
+        <div class="card-price secondpage">Rp 500.000</div>
+      </div>
+
+      <div class="card secondpage" id="card1">
+        <div class="image-container secondpage">
+          <div class="image-wrapper secondpage">
+            <img
+              src="./assets/img/Cake/CHOCOLATE_MADNESS_CROP1.webp"
+              alt=""
+              class="card-image secondpage"
+            />
+            <img
+              src="./assets/img/Cake/CHOCOLATEMADNESSSLICE_CROP.webp  "
+              alt=""
+              class="card-image-hover secondpage"
+            />
+          </div>
+        </div>
+        <p class="card-title secondpage">Chocolate Madness</p>
+        <hr class="card-liner secondpage" />
+        <div class="card-price secondpage">Rp 525.00</div>
+      </div>
+
+      <div class="card secondpage" id="card1">
+        <div class="image-container secondpage">
+          <div class="image-wrapper secondpage">
+            <img
+              src="./assets/img/Cake/GALAXY_CAKE_CROP1.webp"
+              alt=""
+              class="card-image secondpage"
+            />
+            <img
+              src="./assets/img/Cake/GALAXY3.webp "
+              alt=""
+              class="card-image-hover secondpage"
+            />
+          </div>
+        </div>
+        <p class="card-title secondpage">Galaxy</p>
+        <hr class="card-liner secondpage" />
+        <div class="card-price secondpage">Rp 450.000</div>
+      </div>
+
+      <div class="card secondpage" id="card1">
+        <div class="image-container secondpage">
+          <div class="image-wrapper secondpage">
+            <img
+              src="./assets/img/Cake/SAY_CHEESE_OVOMALTINE_CROP1.webp"
+              alt=""
+              class="card-image secondpage"
+            />
+            <img
+              src="./assets/img/Cake/SAY-CHEESE-OVOMALTINE3.webp "
+              alt=""
+              class="card-image-hover secondpage"
+            />
+          </div>
+        </div>
+        <p class="card-title secondpage">Say Cheese! Ovomaltine</p>
+        <hr class="card-liner secondpage" />
+        <div class="card-price secondpage">Rp 500.000</div>
+      </div>
+
+      <div class="card secondpage" id="card1">
+        <div class="image-container secondpage">
+          <div class="image-wrapper secondpage">
+            <img
+              src="./assets/img/Cake/2ysqr--revise.webp"
+              alt=""
+              class="card-image secondpage"
+            />
+            <img
+              src="./assets/img/Cake/2b-revise.webp  "
+              alt=""
+              class="card-image-hover secondpage"
+            />
+          </div>
+        </div>
+        <p class="card-title secondpage">Fresher Berry</p>
+        <hr class="card-liner secondpage" />
+        <div class="card-price secondpage">Rp 400.000</div>
+      </div>
+
+      <div class="card secondpage" id="card1">
+        <div class="image-container secondpage">
+          <div class="image-wrapper secondpage">
+            <img
+              src="./assets/img/Cake/CHOCOLATE_SUNDAY_CROP1.webp"
+              alt=""
+              class="card-image secondpage"
+            />
+            <img
+              src="./assets/img/Cake/CHOCOLATE-SUNDAY4.webp  "
+              alt=""
+              class="card-image-hover secondpage"
+            />
+          </div>
+        </div>
+        <p class="card-title secondpage">Chocolate Sunday</p>
+        <hr class="card-liner secondpage" />
+        <div class="card-price secondpage">Rp 300.000</div>
+      </div>
+
+      <div class="card secondpage" id="card1">
+        <div class="image-container secondpage">
+          <div class="image-wrapper secondpage">
+            <img
+              src="./assets/img/Cake/3-rvs.webp"
+              alt=""
+              class="card-image secondpage"
+            />
+            <img
+              src="./assets/img/Cake/MG_4083-100px.webp"
+              alt=""
+              class="card-image-hover secondpage"
+            />
+          </div>
+        </div>
+        <p class="card-title secondpage">Collete's Java</p>
+        <hr class="card-liner secondpage" />
+        <div class="card-price secondpage">Rp 400.000</div>
+      </div>
+
+      <div class="card secondpage" id="card1">
+        <div class="image-container secondpage">
+          <div class="image-wrapper secondpage">
+            <img
+              src="./assets/img/Cake/TWINKLE_BLUE_CROP1.webp"
+              alt=""
+              class="card-image secondpage"
+            />
+            <img
+              src="./assets/img/Cake/TWINKLE-BLUE-2.webp  "
+              alt=""
+              class="card-image-hover secondpage"
+            />
+          </div>
+        </div>
+        <p class="card-title secondpage">Twinkle Little Star - Blue</p>
+        <hr class="card-liner secondpage" />
+        <div class="card-price secondpage">Rp 500.000</div>
+      </div>
+
+      <div class="card secondpage" id="card1">
+        <div class="image-container secondpage">
+          <div class="image-wrapper secondpage">
+            <img
+              src="./assets/img/Cake/TWINKLE_PINK_CROP1.webp"
+              alt=""
+              class="card-image secondpage"
+            />
+            <img
+              src="./assets/img/Cake/TWINKLE-PINK-3.webp  "
+              alt=""
+              class="card-image-hover secondpage"
+            />
+          </div>
+        </div>
+        <p class="card-title secondpage">Twinkle Little Star - Pink</p>
+        <hr class="card-liner secondpage" />
+        <div class="card-price secondpage">Rp 500.000</div>
+      </div>
+
+      <div class="card secondpage" id="card1">
+        <div class="image-container secondpage">
+          <div class="image-wrapper secondpage">
+            <img
+              src="./assets/img/Cake/OVOMILO_CROP1.webp"
+              alt=""
+              class="card-image secondpage"
+            />
+            <img
+              src="./assets/img/Cake/OVOMILO_SLICE_CROP1.webp  "
+              alt=""
+              class="card-image-hover secondpage"
+            />
+          </div>
+        </div>
+        <p class="card-title secondpage">Ovo Milo</p>
+        <hr class="card-liner secondpage" />
+        <div class="card-price secondpage">Rp 320.000</div>
+      </div>
+
+      <div class="card secondpage" id="card1">
+        <div class="image-container secondpage">
+          <div class="image-wrapper secondpage">
+            <img
+              src="./assets/img/Cake/WEB-CAROL_SCARROTCAKE.webp"
+              alt=""
+              class="card-image secondpage"
+            />
+            <img
+              src="./assets/img/Cake/WEB-CAROL_SCARROTCAKE2.webp  "
+              alt=""
+              class="card-image-hover secondpage"
+            />
+          </div>
+        </div>
+        <p class="card-title secondpage">Carol's Carrot Cake</p>
+        <hr class="card-liner secondpage" />
+        <div class="card-price secondpage">Rp 385.000</div>
+      </div>
+    </div>
+
+    <div class="bg-1">.</div>
+    <div class="bg-2">.</div>
+    <div class="bg-3">.</div>
+    <div class="bg-4">.</div>
+    <script src="secondPage.js"></script>
   </body>
 </html>
