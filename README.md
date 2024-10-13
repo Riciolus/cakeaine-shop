@@ -11,7 +11,9 @@
       </ul>
   
   <h2>📸 Screenshots</h2>
-      
+    ![Macbook-Air-cakeaine-shop vercel app](https://github.com/user-attachments/assets/6c6c4c14-3a65-436e-a5b7-e4aae9e7a03a)
+<!--     ![iPhone-13-PRO-cakeaine-shop vercel app](https://github.com/user-attachments/assets/803b70fe-c294-4586-94b1-05551da83773) -->
+
   
   <h2>🛠️ Technologies Used</h2>
       <ul>
